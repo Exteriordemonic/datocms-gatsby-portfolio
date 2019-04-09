@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import { StaticQuery, graphql } from "gatsby"
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 
+import logo from '../images/logo.png'
+
 import '../styles/index.sass'
 
 const TemplateWrapper = ({ children }) => (
@@ -48,7 +50,9 @@ const TemplateWrapper = ({ children }) => (
       <div className="container__sidebar">
         <div className="sidebar">
           <h6 className="sidebar__title">
-            <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
+            <Link to="/">
+              <img src={ logo } alt="Mirosz Development"/>
+            </Link>
           </h6>
           <div
             className="sidebar__intro"
